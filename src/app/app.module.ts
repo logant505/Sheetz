@@ -7,6 +7,8 @@ import { SideNavComponent } from './Navigation/side-nav/side-nav.component';
 import { FooterComponent } from './Navigation/footer/footer.component';
 import { SearchComponent } from './Navigation/search/search.component';
 import { SlideshowComponent } from './Navigation/slideshow/slideshow.component';
+import { BottomCarouselCardComponent } from './Navigation/bottom-carousel-card/bottom-carousel-card.component';
+import { MiddleIconCardComponent } from './Navigation/middle-icon-card/middle-icon-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SlideshowComponent } from './Navigation/slideshow/slideshow.component';
     SideNavComponent,
     FooterComponent,
     SearchComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    BottomCarouselCardComponent,
+    MiddleIconCardComponent
   ],
   imports: [
     BrowserModule,
