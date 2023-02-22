@@ -1,9 +1,15 @@
 <!-- Nav Bar and Other Top of Page Features -->
 <app-side-nav></app-side-nav>
-<!-- Middle Carousel -->
-<app-slideshow></app-slideshow>
 <!-- Middle Icon Card -->
 <app-middle-icon-card></app-middle-icon-card>
+<!-- Carousel Builder -->
+<div class="container-fluid d-flex">
+<div *ngFor="let item of products">
+    <app-carousel-builder imgOne="" imgDescrOne="" imgTwo="" imgDescrTwo="" imgThree="" imgDescrThree="" ></app-carousel-builder>
+</div>
+<app-carousel-builder imgOne="" imgDescrOne="" imgTwo="" imgDescrTwo="" imgThree="" imgDescrThree=""></app-carousel-builder>
+</div>
+<app-carousel-builder></app-carousel-builder>
 <!-- Bottom Carousel inside of a Card -->
 <app-bottom-carousel-card></app-bottom-carousel-card>
 <!-- Search Bar -->
