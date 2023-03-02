@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {ProductModel} from './carousel-builder/product.model';
-import {mock_list} from './carousel-builder/mock_list';
+import { ProductModel } from './carousel-builder/product.model';
+import { mock_list } from './carousel-builder/mock_list';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +8,7 @@ import {mock_list} from './carousel-builder/mock_list';
 })
 export class AppComponent {
   title = 'Sheetz';
-  products:ProductModel []=[];
+  products: ProductModel []=[];
   constructor(){
     for(var item of mock_list){
       console.log(item);
@@ -16,10 +16,3 @@ export class AppComponent {
     }
   }
 }
-
-
-@Component({
-  selector:'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
