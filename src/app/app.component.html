@@ -1,19 +1,5 @@
-<router-outlet></router-outlet>
-<!-- Nav Bar and Other Top of Page Features -->
+
 <app-side-nav></app-side-nav>
-<!-- Middle Icon Card -->
-<app-middle-icon-card></app-middle-icon-card>
-<!-- Carousel Builder -->
-<div class="container-fluid d-flex">
-<div *ngFor="let item of products">
-    <app-carousel-builder imgOne={{item.imgOne}} imgDescrOne={{item.imgDescrOne}} imgTwo={{item.imgTwo}} imgDescrTwo={{item.imgDescrTwo}} imgThree={{item.imgThree}} imgDescrThree={{item.imgDescrThree}} ></app-carousel-builder>
-</div>
-<app-carousel-builder imgOne="bnr_clean.jpg" imgDescrOne="Clean Ad" imgTwo="bnr_sept_2022_visa2.jpg" imgDescrTwo="Card Ad" imgThree="top100_2019_banner.jpg" imgDescrThree="banner"></app-carousel-builder>
-</div>
-<app-carousel-builder></app-carousel-builder>
-<!-- Bottom Carousel inside of a Card -->
-<app-bottom-carousel-card></app-bottom-carousel-card>
-<!-- Search Bar -->
-<app-search></app-search>
-<!-- Bottom of Page Features -->
+<router-outlet></router-outlet>
 <app-footer></app-footer>
+

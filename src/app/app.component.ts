@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductModel } from './carousel-builder/product.model';
-import { mock_list } from './carousel-builder/mock_list';
+import { ProductModel } from './Navigation/carousel-builder/product.model';
+import { mock_list } from './Navigation/carousel-builder/mock_list';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
