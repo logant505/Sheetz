@@ -17,6 +17,7 @@ import { KidsLayoutComponent } from './layouts/kids-layout/kids-layout.component
 import { CharitiesComponent } from './layouts/charities/charities.component';
 import { ScripComponent } from './layouts/scrip/scrip.component';
 import { HomepageComponent } from './layouts/homepage/homepage.component';
+import { CardBuilderComponent } from './layouts/card-builder/card-builder.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HomepageComponent } from './layouts/homepage/homepage.component';
     SearchLayoutComponent,
     KidsLayoutComponent,
     ScripComponent,
-    HomepageComponent
+    HomepageComponent,
+    CardBuilderComponent
   ],
   
   imports: [

@@ -1,33 +1,14 @@
 
 <!-- Needs Image -->
-<!-- Top Card -->
-<div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Definition of a Sheetz</h5>
-    <p class="card-text">Above all else, Sheetz is about providing kicked-up convenience while being more than just a convenience store. Sheetz is a mecca for people on the go. If you need to refuel your car or refresh your body, we have what you need to keep you moving on to whatever comes next.</p>
-    <p class="card-text">Road warriors. Construction workers. Soccer moms. They all have a special place at Sheetz. We know you don't have time to run all over town for the things you need. Sheetz has what you need, when you need it. And, we're here 24/7/365. Even on Christmas day.</p>
-    <!-- Needs Links -->
+<div class = "container-fluid d-flex flex-column">
+  <div *ngFor="let item of products">
+      <app-card-builder  description={{item.description}} description2={{item.description2}} title={{item.title}}></app-card-builder>
+  
+    </div>
+
+<app-card-builder title="Definition of a Sheetz" description2="Road warriors. Construction workers. Soccer moms. They all have a special place at Sheetz. We know you dont have time to run all over town for the things you need. Sheetz has what you need, when you need it. And, were here 24/7/365. Even on Christmas day." description="Above all else, Sheetz is about providing kicked-up convenience while being more than just a convenience store. Sheetz is a mecca for people on the go. If you need to refuel your car or refresh your body, we have what you need to keep you moving on to whatever comes next." ></app-card-builder>
 </div>
-  </div>
-  <!-- Middle Top -->
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Committed to Our Customers</h5>
-      <p class="card-text">We really care about our customers. Our mission at Sheetz is to provide fast, friendly service and quality products in clean and convenient locations. We work hard to make sure we deliver on our Mission promise every day.</p>
-      <p class="card-text">We are able to succeed because we have outstanding employees with a commitment to Total Customer Focus (TCF). Our employees strive to meet the needs of our busy customers. Our employees are also active participants in the communities in which we operate convenience stores.</p>
-    </div>
-  </div>
-  <!-- Middle Bottom -->
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Committed to Our Communities</h5>
-      <p class="card-text">We connect with our neighbors in a number of ways and through various charitable organizations like Special Olympics, youth sports groups and Sheetz For the Kidz®.</p>
-      <p class="card-text">Sheetz employees started Sheetz For the Kidz® in 1992. Since then, we have raised millions of dollars to buy toys, clothes and other necessities for needy children during the holiday season. It's a charity that is very near and dear to our hearts, and our employees work hard to raise more money and help even more children each year.
-      </p>
-    </div>
-  </div>
+
  <!-- Bottom Card -->
   <div class="card">
     <div class="card-body">
