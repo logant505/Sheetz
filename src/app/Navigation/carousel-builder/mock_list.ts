@@ -1,18 +1,18 @@
 export const mock_list=[
     {
-    imgOne:"bnr_clean.jpg",
+    imgOne:"assets/topmid1.jpg",
     imgDescrOne:"Sales Ad",
-    imgTwo:"bnr_sept_2022_visa2.jpg",
+    imgTwo:"assets/topmid2.jpg",
     imgDescrTwo:"Sales Ad",
-    imgThree:"top100_2019_banner.jpg",
+    imgThree:"assets/topmid3.jpg",
     imgDescrThree:"Sales Ad",
 },
 {
-    imgOne:"sms.jpg",
+    imgOne:"assets/bot1.jpg",
     imgDescrOne:"Sales Ad",
-    imgTwo:"sms2.jpg",
+    imgTwo:"assets/bot2.jpg",
     imgDescrTwo:"Sales Ad",
-    imgThree:"sms9.jpg",
+    imgThree:"assets/bot3.jpg",
     imgDescrThree:"Sales Ad",
 }
 ];

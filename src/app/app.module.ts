@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,8 @@ import { CharitiesComponent } from './layouts/charities/charities.component';
 import { ScripComponent } from './layouts/scrip/scrip.component';
 import { HomepageComponent } from './layouts/homepage/homepage.component';
 import { CardBuilderComponent } from './layouts/card-builder/card-builder.component';
+import { TopFlexComponent } from './Navigation/top-flex/top-flex.component';
+import { UserInfoComponent } from './Navigation/side-nav/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +37,15 @@ import { CardBuilderComponent } from './layouts/card-builder/card-builder.compon
     KidsLayoutComponent,
     ScripComponent,
     HomepageComponent,
-    CardBuilderComponent
+    CardBuilderComponent,
+    TopFlexComponent,
+    UserInfoComponent
   ],
   
   imports: [
     BrowserModule,
-    AppRoutingModule
-
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
