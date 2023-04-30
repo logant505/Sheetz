@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site":"sheetz-6c1c5",
     "public": "dist/sheetz",
     "ignore": [
       "firebase.json",

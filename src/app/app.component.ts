@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,NgModule } from '@angular/core';
 import { ProductModel } from './Navigation/carousel-builder/product.model';
 import { mock_list } from './Navigation/carousel-builder/mock_list';
+import {FormsModule} from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ScripComponent } from './layouts/scrip/scrip.component';
 import { BioLayoutComponent } from './layouts/bio-layout/bio-layout.component';
@@ -6,6 +7,8 @@ import { SearchLayoutComponent } from './layouts/find/search-layout.component';
 import { CharitiesComponent } from './layouts/charities/charities.component'; 
 import { KidsLayoutComponent } from './layouts/kids-layout/kids-layout.component';
 import { HomepageComponent } from './layouts/homepage/homepage.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { AuthComponent } from './auth/auth.component';
 const routes: Routes = [
   {
     path:'',
@@ -31,11 +34,21 @@ const routes: Routes = [
     path:'kids',
     component:KidsLayoutComponent
   },
+  {
+    path:'admin',
+    component:AddProductComponent
+  },
+  {
+    path:'login',
+    component:AuthComponent
+  }
   
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

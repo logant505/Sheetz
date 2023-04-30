@@ -1,4 +1,14 @@
 export const environment={
+  firebase: {
+    projectId: 'sheetz-6c1c5',
+    appId: '1:24796851856:web:47f4521741a890d6377215',
+    databaseURL: 'https://sheetz-6c1c5-default-rtdb.firebaseio.com',
+    storageBucket: 'sheetz-6c1c5.appspot.com',
+    apiKey: 'AIzaSyC3M6jioxH8SLDg6ZT-NIVi4utWQMhVKoQ',
+    authDomain: 'sheetz-6c1c5.firebaseapp.com',
+    messagingSenderId: '24796851856',
+    measurementId: 'G-REZ0DYBTM0',
+  },
     production:false
 }// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -8,17 +18,18 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAY6qMEVy_iQrX03v9zyx7nSwP3suYMIxg",
-  authDomain: "pet-shelter-app-1ab3f.firebaseapp.com",
-  databaseURL: "https://pet-shelter-app-1ab3f-default-rtdb.firebaseio.com",
-  projectId: "pet-shelter-app-1ab3f",
-  storageBucket: "pet-shelter-app-1ab3f.appspot.com",
-  messagingSenderId: "1087461841151",
-  appId: "1:1087461841151:web:3b3721f61b2ccab34e94ca",
-  measurementId: "G-P7F81Z6HSM"
+
+const firebase= {
+  apiKey: "AIzaSyC3M6jioxH8SLDg6ZT-NIVi4utWQMhVKoQ",
+  authDomain: "sheetz-6c1c5.firebaseapp.com",
+  databaseURL: "https://sheetz-6c1c5-default-rtdb.firebaseio.com",
+  projectId: "sheetz-6c1c5",
+  storageBucket: "sheetz-6c1c5.appspot.com",
+  messagingSenderId: "24796851856",
+  appId: "1:24796851856:web:47f4521741a890d6377215",
+  measurementId: "G-REZ0DYBTM0"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebase);
 const analytics = getAnalytics(app);

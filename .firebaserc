@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sheetz-6c1c5"
+  },
+  "targets": {
+    "sheetz-6c1c5": {
+      "hosting": {
+        "Sheetz": [
+          "sheetz-6c1c5"
+        ]
+      }
+    }
+  }
+}

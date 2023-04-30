@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" {ngSubmit}="addProduct{postForm.value}">
+                <div class="input-group">
+                    <span class="input-group-text">Username</span>
+                    <input type="text" class="form-control" ngModel name="username">
+                </div>
+                <div class="input-group">
+                    <span class="input--group-text">Password</span>
+                    <input type="text" class="form-control" ngModel name="password">
+                </div>
+                <button class="btn btn-dark" type="submit">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
